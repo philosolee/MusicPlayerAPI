@@ -1,6 +1,6 @@
-import config
+from config import MONGO_SERVER, MONGO_DATABASE
 from mongoengine import *
-connect(config.MONGO_DATABASE)
+connect(MONGO_DATABASE, host=MONGO_SERVER)
 
 
 class Artist(Document):

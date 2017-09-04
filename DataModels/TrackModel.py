@@ -1,6 +1,6 @@
-import config
+from config import MONGO_DATABASE, MONGO_SERVER
 from mongoengine import *
-connect(config.MONGO_DATABASE)
+connect(MONGO_DATABASE, host=MONGO_SERVER)
 
 
 class Track(Document):

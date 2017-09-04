@@ -1,6 +1,6 @@
 from config import MONGO_DATABASE, MONGO_SERVER
 from mongoengine import *
-connect(MONGO_DATABASE)
+connect(MONGO_DATABASE, host=MONGO_SERVER)
 
 
 class Album(Document):

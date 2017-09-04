@@ -1,2 +1,2 @@
-MONGO_SERVER = ""
+MONGO_SERVER = "192.168.1.1"
 MONGO_DATABASE = "MusicLibrary"

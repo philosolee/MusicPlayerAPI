@@ -3,7 +3,6 @@ from DataModels.AlbumModel import Album
 from DataModels.ArtistModel import Artist
 from DataModels.TrackModel import Track
 import eyed3
-from mutagen.easyid3 import EasyID3
 
 MUSIC_ROOT = "H:\Media\Music\Core"
 

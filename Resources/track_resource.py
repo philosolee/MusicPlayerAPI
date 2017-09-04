@@ -26,5 +26,8 @@ class Tracks(Resource):
 class TrackByTitle(Resource):
     def get(self, title):
         data = Track.objects(title=title).all()
-        return build_response_object(data)
+        if len(data) > 0:
+            return build_response_object(data)
+        else:
+            return create_response("No track with title: '{0}'".format(title), 404)
 

@@ -17,6 +17,3 @@ def json_of_response(response):
 def url_encode_string(text):
     return parse.quote(text)
 
-
-def test_fucntion():
-    pass

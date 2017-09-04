@@ -1,0 +1,2 @@
+MONGO_SERVER = ""
+MONGO_DATABASE = "MusicLibrary"

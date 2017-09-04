@@ -1,6 +1,6 @@
 from flask import Response
 import json
-import urllib
+from urllib import parse
 
 
 def create_response(json, code=200):
@@ -15,4 +15,4 @@ def json_of_response(response):
 
 
 def url_encode_string(text):
-    return urllib.parse.quote(text)
+    return parse.quote(text)

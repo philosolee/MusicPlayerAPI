@@ -33,5 +33,8 @@ class Albums(Resource):
 class AlbumByName(Resource):
     def get(self, title):
         data = Album.objects(title=title).all()
-        return create_response(data, 200)
+        if len(data) > 0:
+            return build_response_object(data)
+        else:
+            return create_response("No album with title: '{0}'".format(title), 404)
 

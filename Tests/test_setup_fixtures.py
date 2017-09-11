@@ -1,5 +1,5 @@
 import pytest
-from run import app
+from musicplayer import app
 
 
 @pytest.fixture(scope="session")
